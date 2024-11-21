@@ -8,3 +8,6 @@ I implemented an algorithm to solve the **n×n puzzle** using the **A\*** algori
 3. **Tracking States**: To efficiently track visited states and reconstruct the solution path, I convert the grid into a **hashable string**. This approach optimizes both memory usage and lookup speed compared to nested tuples.
 
 The code is designed to handle grids of any size `n×n` , but as `n` increases, the computational time grows exponentially. It performs well for sizes up to `3x3`, but larger grids significantly increase the solution time due to the combinatorial complexity.
+
+
+I have also experimented with more complex approaches, such as IDA* search, achieving good results for grids larger than 4x4 (see 8-puzzle advanced), and tested other heuristics.
